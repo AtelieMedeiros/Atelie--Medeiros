@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ateliê Medeiros | Moda Exclusiva Sob Medida</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville&family=Montserrat:wght@300;400;500&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      background: #faf9f7;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #1a1a1a;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.45);
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5rem;
+      letter-spacing: 8px;
+      position: relative;
+      z-index: 2;
+    }
+    .subtitle {
+      font-size: 1.4rem;
+      letter-spacing: 4px;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    section {
+      padding: 100px 0;
+    }
+    .bg-light { background: #fff; }
+    .bg-beige { background: #f8f5f2; }
+    .text-center { text-align: center; }
+    .section-title {
+      font-size: 3rem;
+      margin-bottom: 50px;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: '';
+      width: 80px;
+      height: 2px;
+      background: #c9a96f;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .about-text {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .process {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+    .step {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .step-number {
+      font-family: 'Playfair Display';
+      font-size: 4rem;
+      color: #c9a96f;
+      opacity: 0.2;
+      position: absolute;
+      top: -20px;
+      left: 20px;
+    }
+    .step h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .creator {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .creator img {
+      width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .value {
+      font-family: 'Playfair Display';
+      font-size: 1.4rem;
+      color: #c9a96f;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #ccc;
+      padding: 80px 0 40px;
+      text-align: center;
+    }
+    .gold { color: #c9a96f; }
+    @media (max-width: 768px) {
+      .creator { flex-direction: column; text-align: center; }
+      .creator img { width: 100%; max-width: 350px; }
+      .logo { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">Ateliê Medeiros</div>
+      <p class="subtitle">Moda Exclusiva Sob Medida</p>
+    </div>
+  </header>
+
+  <!-- SOBRE -->
+  <section class="bg-light text-center">
+    <div class="container">
+      <h2 class="section-title">Sobre o Ateliê</h2>
+      <p class="about-text">
+        O Ateliê Medeiros nasceu com o propósito de criar peças exclusivas, luxuosas e sofisticadas para mulheres que valorizam estilo, elegância e personalidade. Nosso foco é atender um público exigente, que busca mais do que roupas: deseja viver uma experiência de moda sob medida.<br><br>
+        Aqui, cada peça é tratada como uma obra de arte — criada com carinho, técnica e atenção absoluta aos detalhes. Trabalhamos para entregar vestidos que elevam a autoestima e fazem cada cliente sentir-se poderosa, confiante e única.
+      </p>
+    </div>
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section class="bg-beige">
+    <div class="container text-center">
+      <h2 class="section-title">História</h2>
+      <p class="about-text">
+        O Ateliê Medeiros começou como um sonho, um desejo profundo de transformar criatividade em arte. Desde muito jovem, Vinícius de Medeiros já demonstrava talento e paixão pelo universo da moda, desenhando croquis, pesquisando tendências e imaginando roupas que chamassem atenção pela beleza e exclusividade.<br><br>
+        Com dedicação, estudo e amor pela área, Vinicius  transformou esse talento em um projeto real: um ateliê que representa luxo, perfeição e modernidade. Hoje, crescemos com um propósito claro: vestir mulheres de alta classe com peças únicas e técnica impecável.
+      </p>
+    </div>
+  </section>
+
+  <!-- ESTILO -->
+  <section class="bg-light text-center">
+    <div class="container">
+      <h2 class="section-title">Nosso Estilo</h2>
+      <p class="about-text">
+        Inspirado no universo das mulheres ricas, elegantes e sofisticadas — as verdadeiras <span class="gold">“mulheres luxuosas”</span>.<br>
+        Peças finas, cortes modernos, tecidos nobres e muita exclusividade são nossa marca registrada.<br><br>
+        <strong>Não trabalhamos com peças prontas.<br>
+        Cada criação é única. Exclusiva. Feita especialmente para você.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="bg-beige">
+    <div class="container">
+      <h2 class="section-title text-center">Processo de Criação</h2>
+      <div class="process">
+        <div class="step"><div class="step-number">1</div><h3>Conversa com a Cliente</h3><p>Entendemos estilo, ocasião, preferências e medidas. Trazemos referências e definimos a identidade da peça.</p></div>
+        <div class="step"><div class="step-number">2</div><h3>Criação do Croqui</h3><p>Vini desenha um croqui exclusivo, ajustado até ficar perfeito.</p></div>
+        <div class="step"><div class="step-number">3</div><h3>Escolha dos Materiais</h3><p>Tecidos nobres (malhas especiais, crepes finos, rendas italianas, cetins premium) e aviamentos de alta qualidade.</p></div>
+        <div class="step"><div class="step-number">4</div><h3>Modelagem e Corte</h3><p>Modelagem precisa e corte limpo para caimento impecável.</p></div>
+        <div class="step"><div class="step-number">5</div><h3>Costura Profissional</h3><p>Acabamento fino e técnicas que garantem durabilidade e beleza.</p></div>
+        <div class="step"><div class="step-number">6</div><h3>Provas e Ajustes</h3><p>A cliente experimenta e fazemos todos os ajustes finais com atenção total.</p></div>
+        <div class="step"><div class="step-number">7</div><h3>Entrega Final</h3><p>Peça exclusiva entregue com garantia de qualidade, perfeição e elegância.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE O CRIADOR -->
+  <section class="bg-light">
+    <div class="container creator">
+      <div>
+        <h2 class="section-title">Vinícius de Medeiros</h2>
+        <p style="font-size:1.15rem;">
+          Vinicius,É o criador, e alma do Ateliê Medeiros, é um jovem estilista apaixonado por moda, arte e criação. Desde cedo encantou-se pela ideia de transformar tecidos em algo extraordinário.<br><br>
+          Inteligente, dedicado e visionário, desenvolveu um estilo único: moderno, luxuoso e elegante.<br><br>
+          Ele é responsável por criar todos os croquis exclusivos, definir o estilo do ateliê, selecionar tecidos e cuidar pessoalmente da produção de cada peça.<br><br>
+          <em>“A moda é uma forma de expressão. Cada mulher merece se sentir especial, poderosa e única.”</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSÃO, VISÃO E VALORES -->
+  <section class="bg-beige text-center">
+    <div class="container">
+      <h2 class="section-title">Missão | Visão | Valores</h2>
+      <p style="max-width:800px; margin:0 auto 60px; font-size:1.2rem;">
+        <strong>Missão</strong> — Entregar moda exclusiva que valorize a elegância e a individualidade de cada cliente.<br>
+        <strong>Visão</strong> — Tornar-se referência nacional em moda de luxo sob medida, criando peças que marcam momentos especiais.<br><br>
+      </p>
+      <div class="values">
+        <div class="value">Exclusividade</div>
+        <div class="value">Qualidade</div>
+        <div class="value">Sofisticação</div>
+        <div class="value">Respeito</div>
+        <div class="value">Criatividade</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <h2 style="color:#c9a96f; font-family:'Playfair Display';">Ateliê Medeiros</h2>
+      <p>Moda exclusiva • Sob medida • Luxo brasileiro</p>
+      <p style="margin-top:40px; font-size:0.9rem;">
+        Contato: (55) 47 92000-3645 Email:@Ateliemedeiross.com.br<br>
+        Instagram: @Atelie_Medeiros
+      </p>
+      <p style="margin-top:50px; font-size:0.8rem; opacity:0.6;">© 2026 Ateliê Medeiros. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+  </html>
